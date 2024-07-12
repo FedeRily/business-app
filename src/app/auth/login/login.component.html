@@ -1,5 +1,21 @@
-<h2>Iniciar sesión</h2>
-<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+<div class="login-backgorund"></div>
+
+<div class="banner">
+  <select style="margin-right: 20px;">
+    <option value="Spanish">Español</option>
+    <option value="English">Ingles</option>
+  </select>
+</div>
+
+<div class="divCuerpo">
+
+  <div class="divBienvenido">
+    <h1>BIENVENIDO</h1>
+  </div>
+
+  <form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit() " >
+  
+  
   <mat-form-field class="example-full-width">
     <mat-label>Usuario</mat-label>
     <input matInput
@@ -28,5 +44,7 @@
     }
   </mat-form-field>
 
-  <button mat-flat-button type="submit" [disabled]="loginForm.invalid">Iniciar sesión</button>
-</form>
+  <button mat-flat-button type="submit" [disabled]="loginForm.invalid"><h6>Iniciar sesión</h6></button>
+  </form>
+
+</div>
