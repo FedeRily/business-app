@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ThemeSwitcherComponent } from "./theme-switcher/theme-switcher.component";
+import { ThemeSwitcherComponent } from "./shared/theme-switcher/theme-switcher.component";
 
 @Component({
   selector: 'app-root',
