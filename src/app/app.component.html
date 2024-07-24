@@ -1,2 +1,4 @@
-<app-theme-switcher></app-theme-switcher>
-<router-outlet></router-outlet>
+<div [ngClass]="getThemeClasses()" style="height: 100%;">
+    <button mat-button (click)="toggleTheme()">Cambiar Tema</button>
+    <router-outlet></router-outlet>
+</div>

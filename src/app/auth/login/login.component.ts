@@ -5,11 +5,14 @@ import { AuthService } from '../../core/services/auth.service';
 import { SessionStorageService } from '../../core/services/session-storage.service';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [ReactiveFormsModule, FormsModule, MatFormFieldModule, MatInputModule],
+  imports: [ReactiveFormsModule, FormsModule, MatFormFieldModule, MatInputModule,
+    CommonModule
+  ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
@@ -43,5 +46,4 @@ export class LoginComponent {
   togglePasswordVisibility() {
     this.showPassword = !this.showPassword;
   }
-
 }

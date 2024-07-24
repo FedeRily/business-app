@@ -1,4 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+// Paleta de colores
+$background-color-dark: #810081;
+$text-color-dark: #ffd7f5;
+
+$background-color-light: #bbddff;
+$text-color-light: black;
+
+$background-button-color-dark: #6c026c;
+$text-button-color-dark: #ffd7f5;
+
+$background-button-color-light: #d7e3ff;
+$text-button-color-light: #001b3f;
+
+.light-theme {
+  background-color: $background-color-light;
+  color: $text-color-light;
+
+  ::ng-deep .mat-button {
+    background-color: $background-button-color-light;
+    color: $text-button-color-light;
+  }
+
+  button {
+    background-color: $background-button-color-light;
+    color: $text-button-color-light;
+  }
+}
+
+.dark-theme {
+  background-color: $background-color-dark;
+  color: $text-color-dark;
+
+  ::ng-deep .mat-button {
+    background-color: $background-button-color-dark;
+    color: $text-button-color-dark;
+  }
+
+  button {
+    background-color: $background-button-color-dark;
+    color: $text-button-color-dark;
+  }
+}
